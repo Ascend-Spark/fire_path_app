@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
-import 'FirstTab/index.dart';
-import 'SecondTab/index.dart';
-import 'ThirdTab/index.dart';
+import 'CalculatorTab/index.dart';
+import 'HomeTab/index.dart';
+import 'ProfileTab/index.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -31,19 +31,19 @@ class MainPage extends StatelessWidget {
           case 0:
             return CupertinoTabView(builder: (context) {
               return const CupertinoPageScaffold(
-                child: FirstTab(),
+                child: CalculatorTab(),
               );
             });
           case 1:
             return CupertinoTabView(builder: (context) {
               return const CupertinoPageScaffold(
-                child: SecondTab(),
+                child: HomeTab(),
               );
             });
           case 2:
             return CupertinoTabView(builder: (context) {
               return const CupertinoPageScaffold(
-                child: ThirdTab(),
+                child: ProfileTab(),
               );
             });
           default:
